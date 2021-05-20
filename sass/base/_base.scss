@@ -1,0 +1,21 @@
+//reseting the browser styles
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  //use percentage so we have a percent of the users font-size if we leave it at px they cant change it
+
+  //we want it to be 10 px so we do .625 * 16 it will = 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+  color: #777;
+  box-sizing: border-box;
+}

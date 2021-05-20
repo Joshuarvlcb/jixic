@@ -1,0 +1,27 @@
+.heading-text {
+    color: white;
+    .heading-text--main {
+      text-align: center;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      -o-animation-timing-function: ease-in;
+      backface-visibility: hidden;
+      margin-bottom: 0.5rem;
+    }
+    .heading-text--sub {
+      backface-visibility: hidden;
+      margin-bottom: 3rem;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      font-weight: 500;
+      letter-spacing: 4px;
+    }
+  }
+

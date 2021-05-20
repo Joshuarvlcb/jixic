@@ -1,0 +1,58 @@
+.btn:link,
+    .btn:visited {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: purple;
+      padding: 1.5rem 4rem;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 2.1rem;
+      position: relative;
+      z-index: 10;
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(20, 20, 20, 0.205);
+      }
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(20, 20, 20, 0.205);
+      }
+      transition: transform 0.2s ease;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        transition: all 0.2s ease-in;
+        background-color: rgb(255, 255, 255);
+      }
+      &:hover::after {
+        transform: scale(1.4, 1.6);
+        opacity: 0;
+      }
+    }
+    .btn--white {
+      background-color: white;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        background-color: rgb(255, 255, 255);
+      }
+      
+    
+    }
+    .btn--animate {
+        animation: btnAnimation ease-out 0.5s 0.75s;
+        //this will apply style of the 0% before the animation starts then will go to 100%
+        animation-fill-mode: backwards;
+      }
